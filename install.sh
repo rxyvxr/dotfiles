@@ -1,20 +1,9 @@
 #!/bin/bash
 
-# Check if Script is Run as Root
-if [[ $EUID -ne 0 ]]; then
-  echo "You must be a root user to run this script, please run sudo ./install.sh" 2>&1
-  exit 1
-fi
-
 #update 
-pacman -Syu
-
-#install paru
-sudo pacman -S --needed base-devel sddm
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -si
-
+sudo pacman -Syu
+sudo pacman -S firefox
+sudo pacman -S dolphin
 #install dependecies
 paru -S bspwm polybar sxhkd dunst rofi lsd checkupdates-aur \
 playerctl mpd ncmpcpp mpc picom-arian8j2-git xtitle termite betterlockscreen \
