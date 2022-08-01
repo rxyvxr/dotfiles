@@ -10,7 +10,7 @@ fi
 pacman -Syu
 
 #install paru
-sudo pacman -S --needed base-devel
+sudo pacman -S --needed base-devel sddm
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
@@ -20,7 +20,18 @@ paru -S bspwm polybar sxhkd dunst rofi lsd checkupdates-aur \
 playerctl mpd ncmpcpp mpc picom-arian8j2-git xtitle termite betterlockscreen \
 nerd-fonts-jetbrains-mono ttf-jetbrains-mono papirus-icon-theme ttf-inconsolata feh
 
-#clone repo
+#install dotfiles
 cd ~
 git clone https://github.com/gh0stzk/dotfiles.git
 cd dotfiles
+mkdir ~/.config
+mkdir ~/.local
+chown $(whoami): ~/.local
+chown $(whoami): ~/.config
+mv ./.config/* ~/.config
+mv ./.local/* ~/.local
+mv .zshrc ~/
+
+# Enabling Services and Graphical User Interface
+systemctl enable sddm
+systemctl set-default graphical.target
