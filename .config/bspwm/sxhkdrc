@@ -9,17 +9,10 @@ super + Return
 	termite -c .config/bspwm/$RICETHEME/termite.config
 	
 # Apps
-shift + alt + {b,g,n,p,r,t,q,w,m,v}
-       {firefox, \
-        geany, \
-        thunar, \
-        pavucontrol, \
-        termite -c .config/bspwm/$RICETHEME/termite.config -e ranger, \
-        telegram-desktop, \
-        qutebrowser --qt-flag disable-gpu, \
-        whatsapp-nativefier --disable-gpu, \
-        env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify --disable-gpu --no-zygote %U, \
-        termite -c .config/bspwm/$RICETHEME/termite.config -e nvim}
+super + w
+	firefox
+super + e
+	thunar
         
 #hide
 super + h
