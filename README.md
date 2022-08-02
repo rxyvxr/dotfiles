@@ -30,12 +30,6 @@ Aline's Rice was totally inspired by this [theme by TheMonkeyLlama](https://www.
 |<img src="assets/Shot-27-julio-22-002001.webp" alt="Aline Rice" align="center" width="400px">|<img src="assets/Shot-27-julio-22-002636.webp" alt="Aline Rice" align="center" width="400px">|
 |---|---|
 
-### Andrea
-This is my first eww rice, the bars and widgets are work of the great [adi1090x](https://github.com/adi1090x/widgets). I added stuff and a lot of modifications to fit my needs.
-
-|<img src="assets/Shot-27-julio-22-001746.webp" alt="Andrea Rice" align="center" width="400px">|<img src="assets/Shot-27-julio-22-001532.webp" alt="Andrea Rice" align="center" width="400px">|
-|---|---|
-
 ### Cynthia
 I try to make this one to be elegant, simple and relaxing the.
 
