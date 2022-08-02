@@ -8,7 +8,6 @@ emilia="󰔿 Emilia"
 jan="󰔿 Jan"
 aline="󰔿 Aline"
 isabel="󰔿 Isabel"
-andrea="󰔿 Andrea"
 cynthia="󰔿 Cynthia"
 silvia="󰔿 Silvia"
 melissa="󰔿 Melissa"
@@ -37,11 +36,6 @@ chosen="$(echo -e "$options" | $rofi_command -dmenu -selected-row 3)"
 				;;
 			$isabel)
 				RICETHEME='isabel';
-				cat <<< "$RICETHEME" > $HOME/.config/bspwm/rice.cfg
-				bspc wm -r
-				;;
-			$andrea)
-				RICETHEME='andrea';
 				cat <<< "$RICETHEME" > $HOME/.config/bspwm/rice.cfg
 				bspc wm -r
 				;;
