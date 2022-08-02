@@ -5,7 +5,7 @@ sudo pacman -Syu
 sudo pacman -S firefox lxappearance dolphin qt5ct ntfs-3g gnome-disk-utility spectacle sddm
 #theme
 cd /usr/share/themes/
-git clone https://github.com/EliverLara/Nordic.git
+sudo git clone https://github.com/EliverLara/Nordic.git
 #install dependecies
 paru -S bspwm polybar sxhkd dunst rofi lsd checkupdates-aur \
 playerctl mpd ncmpcpp mpc picom-arian8j2-git xtitle termite betterlockscreen \
