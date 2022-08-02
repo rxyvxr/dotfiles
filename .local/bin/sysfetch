@@ -117,8 +117,8 @@ printf "\n\n"
 
 # greetings
 printf "%s%b" "$PADC" "         Hello $RED$BLD$name$RST\n"
-printf "%s%b" "$PADC" "      Welcome to $GRN$BLD$host$RST\n"
-printf "%s%b" "$PADC" "           up $CYN$BLD$uptm$RST\n\n"
+printf "%s%b" "$PADC" "      Welcome to $GRN$BLD$distro$RST\n"
+printf "%s%b" "$PADC" "           Uptime $CYN$BLD$uptm$RST\n\n"
 
 # environment
 printf "%s%b" "$PADC" "$RED        Distro $GRY⏹ $RST$distro\n"
