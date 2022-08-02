@@ -2,7 +2,7 @@
 
 #shit i need
 sudo pacman -Syu
-sudo pacman -S firefox lxappearance dolphin qt5ct ntfs-3g gnome-disk-utility spectacle sddm ranger
+sudo pacman -S firefox lxappearance dolphin qt5ct ntfs-3g gnome-disk-utility spectacle sddm ranger ueberzug
 #theme
 cd /usr/share/themes/
 sudo git clone https://github.com/EliverLara/Nordic.git
