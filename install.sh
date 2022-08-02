@@ -2,8 +2,10 @@
 
 #update 
 sudo pacman -Syu
-sudo pacman -S firefox
-sudo pacman -S dolphin
+sudo pacman -S firefox lxappearance
+#theme
+cd /usr/share/themes/
+git clone https://github.com/EliverLara/Nordic.git
 #install dependecies
 paru -S bspwm polybar sxhkd dunst rofi lsd checkupdates-aur \
 playerctl mpd ncmpcpp mpc picom-arian8j2-git xtitle termite betterlockscreen \
@@ -17,6 +19,7 @@ mkdir ~/.config
 mkdir ~/.local
 chown $(whoami): ~/.local
 chown $(whoami): ~/.config
+chown $(whoami): ~/
 mv ./.config/* ~/.config
 mv ./.local/* ~/.local
 mv .zshrc ~/
