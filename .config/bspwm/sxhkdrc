@@ -13,6 +13,8 @@ super + w
 	firefox
 super + e
 	dolphin --platformtheme qt5ct
+super + shift + e
+	termite -c .config/bspwm/$RICETHEME/termite.config -e ranger
         
 #hide
 super + h
