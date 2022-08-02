@@ -200,8 +200,8 @@ bspc config presel_feedback_color	  "#070219"
 #### Isabel Rice ####
 
 bspc config border_width                  1
-bspc config top_padding                   10
-bspc config bottom_padding                50
+bspc config top_padding                   50
+bspc config bottom_padding                10
 
 bspc config normal_border_color		  "#333a48" 
 bspc config active_border_color	      "#333a48"
