@@ -44,13 +44,12 @@ alt + @space
 
 # Reload sxhkd
 super + Escape
-	pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'El archivo de configuracion se ha recargado con exito'
-
+	pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'The configuration file has been reloaded successfully'
 #
 # bspwm hotkeys
 #
 
-# Reiniciar BSPWM
+# Restart BSPWM
 super + alt + r
 	bspc wm -r
 
