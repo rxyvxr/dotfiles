@@ -12,9 +12,6 @@ https://user-images.githubusercontent.com/67278339/179444283-d5a4bc48-a9c7-4a91-
 ## ⚠️ Attention!!
 The settings are heavily edited to work on my machine in my 1600x900 resolution. You will probably have to change many things like the terminal "termite" in the files and change it to your own.
 
-## ⭐ The rices...
-So yes... i called the Rices with the names of some of my ex girlfriends. 
-
 ### Emilia:
 Emilia is a dark theme that mostly uses the **TokyoNight color scheme**. The gtk theme is "Dracula" but I modified some things like the background in the applications to be TokyoNight and some images inside assets were modified.
 
