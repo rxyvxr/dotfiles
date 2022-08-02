@@ -116,18 +116,18 @@ printf "\n\n"
 
 
 # greetings
-printf "%s%b" "$PADC" "         hola $RED$BLD$name$RST\n"
-printf "%s%b" "$PADC" "      Bienvenido a $GRN$BLD$host$RST\n"
+printf "%s%b" "$PADC" "         Hello $RED$BLD$name$RST\n"
+printf "%s%b" "$PADC" "      Welcome to $GRN$BLD$host$RST\n"
 printf "%s%b" "$PADC" "           up $CYN$BLD$uptm$RST\n\n"
 
 # environment
-printf "%s%b" "$PADC" "$RED        distro $GRY⏹ $RST$distro\n"
-printf "%s%b" "$PADC" "$BLU        kernel $GRY⏹ $RST$(uname -r)\n"
-printf "%s%b" "$PADC" "$PUR      packages $GRY⏹ $RST$(get_pkg_count)\n"
-printf "%s%b" "$PADC" "$GRN         shell $GRY⏹ $RST${SHELL##*/}\n"
-printf "%s%b" "$PADC" "$YLW          term $GRY⏹ $RST$term\n"
-printf "%s%b" "$PADC" "$CYN            wm $GRY⏹ $RST${wm}\n"
-printf "%s%b" "$PADC" "$BLU          disk $GRY⏹ $RST$storage used\n"
+printf "%s%b" "$PADC" "$RED        Distro $GRY⏹ $RST$distro\n"
+printf "%s%b" "$PADC" "$BLU        Kernel $GRY⏹ $RST$(uname -r)\n"
+printf "%s%b" "$PADC" "$PUR      Packages $GRY⏹ $RST$(get_pkg_count)\n"
+printf "%s%b" "$PADC" "$GRN         Shell $GRY⏹ $RST${SHELL##*/}\n"
+printf "%s%b" "$PADC" "$YLW          Term $GRY⏹ $RST$term\n"
+printf "%s%b" "$PADC" "$CYN            WM $GRY⏹ $RST${wm}\n"
+printf "%s%b" "$PADC" "$BLU          Disk $GRY⏹ $RST$storage used\n"
 printf " $RST\n"
 
 # progress bar
