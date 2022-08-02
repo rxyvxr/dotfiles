@@ -14,7 +14,7 @@ melissa="󰔿 Melissa"
 
 
 # Variable passed to rofi
-options="$emilia\n$jan\n$aline\n$isabel\n$andrea\n$cynthia\n$silvia\n$melissa"
+options="$emilia\n$jan\n$aline\n$isabel\n$cynthia\n$silvia\n$melissa"
 
 chosen="$(echo -e "$options" | $rofi_command -dmenu -selected-row 3)"
 	case $chosen in
