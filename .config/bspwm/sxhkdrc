@@ -12,7 +12,7 @@ super + Return
 super + w
 	firefox
 super + e
-	thunar
+	dolphin --platformtheme qt5ct
         
 #hide
 super + h
