@@ -2,7 +2,7 @@
 
 #shit i need
 sudo pacman -Syu
-sudo pacman -S firefox lxappearance dolphin qt5ct ntfs-3g gnome-disk-utility spectacle sddm
+sudo pacman -S firefox lxappearance dolphin qt5ct ntfs-3g gnome-disk-utility spectacle sddm ranger
 #theme
 cd /usr/share/themes/
 sudo git clone https://github.com/EliverLara/Nordic.git
@@ -23,7 +23,9 @@ chown $(whoami): ~/
 mv ./.config/* ~/.config
 mv ./.local/* ~/.local
 mv .zshrc ~/
-
+chmod +x ~/.config/bspwm/scripts/thememenu.sh
+chmod +x ~/.config/bspwm/scripts/updates.sh
+chmod +x ~/.config/bspwm/scripts/weather-mini.sh
 # Enabling Services and Graphical User Interface
 systemctl enable sddm
 systemctl set-default graphical.target
