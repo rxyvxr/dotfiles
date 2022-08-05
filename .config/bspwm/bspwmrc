@@ -110,7 +110,8 @@ workspaces
 	
 
 ########### Global conf
-
+xrandr
+xrdb -merge ~/.Xresources
 bspc wm --adopt-orphans
 launch sxhkd -c ~/.config/bspwm/sxhkdrc &
 launch picom --config ~/.config/bspwm/$RICETHEME/picom.conf &

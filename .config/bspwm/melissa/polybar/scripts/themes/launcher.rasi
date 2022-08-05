@@ -47,7 +47,7 @@ entry {
     text-color:                     @fg;
     placeholder-color:              @fg;
     expand:                         true;
-    placeholder:                    "Search :";
+    placeholder:                    "Buscar :";
     blink:                          true;
     padding:                        0px 0px 0px 0px;
 }

@@ -14,8 +14,7 @@ super + w
 super + e
 	dolphin --platformtheme qt5ct
 super + shift + e
-	termite -c .config/bspwm/$RICETHEME/termite.config -e ranger
-        
+	termite -c .config/bspwm/$RICETHEME/termite.config -e ranger        
 #hide
 super + h
 		polybar-msg cmd hide | bspc config top_padding 10
@@ -34,7 +33,7 @@ ctrl + alt {plus,minus,t}
         
 # Apagar, Reiniciar, Cerrar Sesion
 ctrl + super + alt + {p,r,q}
-        {systemctl poweroff, systemctl reboot,bspc quit}
+        {systemctl hibernate, systemctl reboot,bspc quit}
         
 # Menu aplicaciones
 super + @space
