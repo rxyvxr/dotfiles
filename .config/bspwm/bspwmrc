@@ -113,6 +113,8 @@ workspaces
 xrandr
 xrdb -merge ~/.Xresources
 bspc wm --adopt-orphans
+bspc rule -a discord desktop=^3
+bspc rule -a firefox desktop=^2
 launch sxhkd -c ~/.config/bspwm/sxhkdrc &
 launch picom --config ~/.config/bspwm/$RICETHEME/picom.conf &
 launch /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
