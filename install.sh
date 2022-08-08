@@ -7,9 +7,9 @@ sudo pacman -S firefox lxappearance dolphin qt5ct ntfs-3g gnome-disk-utility spe
 cd /usr/share/themes/
 sudo git clone https://github.com/EliverLara/Nordic.git
 #install dependecies
-paru -S bspwm polybar sxhkd dunst rofi lsd checkupdates-aur \
+paru -S bspwm polybar sxhkd dunst rofi lsd bsp-layout pacman-contrib protonvpn-cli checkupdates-aur \
 playerctl mpd ncmpcpp mpc picom-arian8j2-git xtitle termite betterlockscreen \
-nerd-fonts-jetbrains-mono ttf-jetbrains-mono papirus-icon-theme ttf-inconsolata feh
+nerd-fonts-jetbrains-mono ttf-jetbrains-mono papirus-icon-theme ttf-inconsolata powerline-fonts ttf-roboto feh
 
 #install dotfiles
 mkdir ~/.config
