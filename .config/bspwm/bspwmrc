@@ -14,7 +14,6 @@ export RICETHEME=$RICETHEME
 unset wallimage
 wallimage=$(shuf -en1 ~/.config/bspwm/$RICETHEME/wallpaper.jpg)
 
-
 function launch() {
   local running
   running="$(pidof "$1")"
@@ -97,9 +96,9 @@ workspaces
 				polybar -q mel-bar -c ~/.config/bspwm/$RICETHEME/polybar/config.ini &
 				polybar -q mel2-bar -c ~/.config/bspwm/$RICETHEME/polybar/config.ini &
 				launch dunst -config ~/.config/bspwm/dunstrc-dark &
-				
-	fi
-				
+
+			fi
+
 	if [ $RICETHEME == andrea ]; then
 		
 		pkill polybar 
@@ -109,9 +108,9 @@ workspaces
 	fi
 	
 
-########### Global conf
-xrandr
-xrdb -merge ~/.Xresources
+########### Global conf 
+bspc rule -a discord desktop=^3
+bspc rule -a firefox desktop=^2
 bspc wm --adopt-orphans
 bspc rule -a discord desktop=^3
 bspc rule -a firefox desktop=^2
@@ -120,8 +119,36 @@ launch picom --config ~/.config/bspwm/$RICETHEME/picom.conf &
 launch /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 launch feh --no-fehbg --bg-fill $wallimage
 bspc config external_rules_command ~/.config/bspwm/scripts/external_rules
+
 #nitrogen --restore &
 xsetroot -cursor_name left_ptr
+
+## Rules ##
+bspc rule -a alacritty locked=true
+bspc rule -a obsidian locked=true
+bspc rule -a Mictray state=floating centered=true
+bspc rule -a Pavucontrol state=floating centered=true
+bspc rule -a Blueman-manager state=floating centered=true
+bspc rule -a Blueman-services state=floating centered=true
+bspc rule -a Display state=floating centered=true
+#bspc rule -a Thunar state=floating centered=true
+bspc rule -a Solaar state=floating centered=true
+bspc rule -a Nm-connection-editor state=floating centered=true
+bspc rule -a flameshot state=floating centered=true
+bspc rule -a GParted state=floating centered=true
+bspc rule -a Grapejuice state=floating centered=true
+bspc rule -a Protonvpn state=floating centered=true
+bspc rule -a Peek state=floating centered=true
+bspc rule -a Steam state=floating centered=true
+bspc rule -a QjackCtl state=floating centered=true
+bspc rule -a steam_app_253030 locked=true desktop='^6'
+#bspc rule -a discord locked=true desktop='^7'
+bspc rule -a "robloxplayerbeta.exe" locked=true desktop="^6"
+bspc rule -a "roblox_installer.exe" locked=true state=floating
+bspc rule -a "robloxplayerlauncher.exe" locked=true state=floating
+bspc rule -a "robloxstudiolauncherbeta.exe" locked=true state=floating
+bspc rule -a "conhost.exe" locked=true state=floating desktop='^9'
+bspc rule -a "fluxuslinux.exe" locked=true state=floating
 
 ###########################################################################
 

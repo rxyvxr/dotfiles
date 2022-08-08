@@ -54,5 +54,6 @@ chosen="$(echo -e "$options" | $rofi_command -dmenu -selected-row 3)"
 				cat <<< "$RICETHEME" > $HOME/.config/bspwm/rice.cfg
 				bspc wm -r
 				;;
+
 		esac
 	

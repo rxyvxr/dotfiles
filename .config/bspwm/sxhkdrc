@@ -14,14 +14,17 @@ super + w
 super + e
 	dolphin --platformtheme qt5ct
 super + shift + e
-	termite -c .config/bspwm/$RICETHEME/termite.config -e ranger        
+	termite -c .config/bspwm/$RICETHEME/termite.config -e ranger
+super + d
+	discord && rpc1
+
 #hide
 super + h
 		polybar-msg cmd hide | bspc config top_padding 10
 #unhide
 super + u 
 		polybar-msg cmd show | bspc config top_padding 45
-		     
+
 # screenshoots
 super + Print
         ~/.local/bin/screenshoter
@@ -171,6 +174,13 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-10 0,0 10,0 -10,10 0}
+# brightness
+
+XF86MonBrightnessUp
+	brightnessctl set +10
+
+XF86MonBrightnessDown
+	brightnessctl set -10
 	
 ## Media keys
 XF86AudioRaiseVolume
