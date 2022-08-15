@@ -13,6 +13,7 @@ RICETHEME=$(<$HOME/.config/bspwm/rice.cfg)
 export RICETHEME=$RICETHEME
 unset wallimage
 wallimage=$(shuf -en1 ~/.config/bspwm/$RICETHEME/wallpaper.jpg)
+export PATH="${PATH}:$HOME/.config/bspwm/bin
 
 function launch() {
   local running
