@@ -23,6 +23,7 @@ mv .zshrc ~/
 chmod +x ~/.config/bspwm/scripts/thememenu.sh
 chmod +x ~/.config/bspwm/scripts/updates.sh
 chmod +x ~/.config/bspwm/scripts/weather-mini.sh
+chmod +x ~/.config/bspwm/bin/*
 chmod +x ~/.local/bin/colorscript
 chmod +x ~/.local/bin/screenshoter
 chmod +x ~/.local/bin/sysfetch
